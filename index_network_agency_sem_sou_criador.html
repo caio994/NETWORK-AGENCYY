@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Network.agency — gestão, conexão entre marcas e criadores e campanhas que geram resultado.">
+<title>Network.agency — Conectamos influência a resultados</title>
+<style>
+:root{--bg:#080808;--card:hwb(0 0% 100%);--gold:lch(98.96% 0.01 296.81);--gold2:#00C6FF;--white:#fafafa;--muted:#a8a8a8;--line:#292929}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(92%,1180px);margin:auto}
+.nav{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.86);backdrop-filter:blur(15px);border-bottom:1px solid #1d1d1d}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{display:flex;align-items:center}.logo img{width:120px;height:auto;display:block}
+.menu{display:flex;gap:28px;color:#ccc;font-size:.93rem}.menu a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:100px;padding:14px 22px;font-weight:850;transition:.2s;border:1px solid transparent}
+.primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#080808}.primary:hover{transform:translateY(-2px)}
+.outline{border-color:#383838;background:#121212}.outline:hover{border-color:var(--gold);color:var(--gold2)}
+.hero{padding:105px 0 80px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:600px;height:600px;right:-250px;top:-250px;background:rgba(215,182,90,.10);filter:blur(100px);border-radius:50%}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.tag{display:inline-block;border:1px solid rgba(0, 0, 0, 0.3);background:rgba(215,182,90,.07);color:var(--gold2);padding:8px 13px;border-radius:100px;font-size:.78rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(3.2rem,7vw,6.4rem);line-height:.91;letter-spacing:-.06em}
+.gold{color:var(--gold)}
+.hero p{max-width:650px;color:var(--muted);font-size:1.08rem;margin:25px 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:35px;margin-top:35px;flex-wrap:wrap}.stats strong{display:block;font-size:1.55rem;color:var(--gold2)}.stats span{color:#888;font-size:.8rem}
+.visual{min-height:530px;border:1px solid #0037eb;border-radius:32px;background:linear-gradient(145deg,#181818,#0b0b0b);position:relative;overflow:hidden}
+.visual:after{content:"CZN";position:absolute;font-size:13rem;font-weight:950;color:rgba(255,255,255,.025);right:-25px;bottom:-45px}
+.creator{position:absolute;border:1px solid rgba(255,255,255,.1);border-radius:25px;background:#151515;box-shadow:0 25px 55px #000;padding:20px}
+.c1{width:63%;height:65%;left:7%;top:7%;transform:rotate(-5deg)}.c2{width:60%;height:63%;right:4%;top:20%;transform:rotate(7deg)}
+.avatar{width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,#333,#777);border:2px solid var(--gold);margin-bottom:14px}
+.creator h3{font-size:1.25rem}.creator p{font-size:.85rem;color:#aaa;margin-top:5px}.pill{display:inline-block;margin-top:14px;padding:7px 10px;border-radius:99px;background:rgba(215,182,90,.1);color:var(--gold2);font-size:.72rem;font-weight:800}
+.float{position:absolute;bottom:22px;left:22px;right:22px;background:rgba(0,0,0,.76);border:1px solid #333;border-radius:17px;padding:15px;z-index:2}
+.float b{color:var(--gold2)}
+section{padding:85px 0}.head{max-width:720px;margin-bottom:35px}.head h2{font-size:clamp(2.2rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.045em;margin-bottom:14px}.head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,#151515,#0e0e0e)}.icon{font-size:1.5rem;color:var(--gold);margin-bottom:18px}.card h3{font-size:1.18rem;margin-bottom:8px}.card p{color:#999;font-size:.93rem}
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border:1px solid var(--line);border-radius:28px;padding:35px;background:#101010}.panel h3{font-size:1.7rem;margin-bottom:20px}.list{display:grid;gap:14px}.list div{display:flex;gap:12px;color:#bbb}.list i{color:var(--gold);font-style:normal;font-weight:900}
+.campaigns{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.campaign{min-height:330px;border-radius:25px;border:1px solid #292929;padding:24px;display:flex;align-items:end;background:radial-gradient(circle at 25% 20%,rgba(90, 196, 215, 0.2),transparent 28%),linear-gradient(145deg,#1b1b1b,#080808)}.campaign:nth-child(2){background:radial-gradient(circle at 75% 30%,rgba(255,255,255,.11),transparent 25%),#111}.campaign:nth-child(3){background:linear-gradient(145deg,rgba(215,182,90,.14),#101010)}.campaign div{background:rgba(0,0,0,.75);padding:17px;border-radius:17px;width:100%}.campaign small{color:var(--gold2);font-weight:800;text-transform:uppercase}.campaign h3{margin-top:4px}
+.cta{padding:70px 0 100px}.ctabox{text-align:center;padding:65px 30px;border:1px solid rgba(123, 90, 215, 0.28);border-radius:32px;background:linear-gradient(135deg,rgba(215,182,90,.13),#111)}.ctabox h2{font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95;letter-spacing:-.05em}.ctabox p{color:#aaa;max-width:650px;margin:18px auto 27px}
+footer{border-top:1px solid #2f00ff;padding:28px 0;color:#888}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.social:hover{color:var(--gold2)}
+@media(max-width:850px){.menu{display:none}.grid,.dual{grid-template-columns:1fr}.visual{min-height:430px}.cards,.campaigns{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.nav .primary{padding:11px 15px;font-size:.82rem}.hero{padding-top:65px}.actions{display:grid}.actions .btn{width:100%}.visual{min-height:350px}.cards,.campaigns{grid-template-columns:1fr}.panel{padding:25px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<div class="container navin">
+<a class="logo" href="#inicio"><img src="Network_agency_logo_transparente.png" alt="Network.agency"></a>
+<nav class="menu"><a href="#servicos">Serviços</a><a href=/a><a href="#criadores">Para criadores</a><a href="#campanhas">Marketing</a></nav>
+<!-- TROQUE PELO SEU WHATSAPP -->
+<a class="btn primary" href="https://wa.me/5519990002859?text=Olá!%20Quero%20falar%20com%20os%20Gerentes!%20" target="_blank">Fale conosco</a>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container grid">
+<div>
+<span class="tag">Influência • Conteúdo • Resultado</span>
+<h1>Conectamos <span class="gold">publicidade</span> às pessoas certas.</h1>
+<p>Uma agência de influência para criar campanhas estratégicas, conectar empresas a criadores e transformar audiência em resultado.</p>
+<div class="actions"><a class="btn primary" href="#contato">Fechar publicidade</a></div>
+<div class="stats"><div><strong>+100</strong><span>criadores</span></div><div><strong>+150</strong><span>Publicidade</span></div><div><strong>100%</strong><span>estratégia personalizada</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="servicos">
+<div class="container">
+<div class="head"><span class="tag">O que fazemos</span><h2>Influência com estratégia, não só números.</h2><p>Planejamos cada ação para que seu marketing, é seu público tenham uma conexão que faça sentido.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">✦</div><h3>Campanhas com influencers</h3><p>Encontramos os perfis certos, estruturamos a campanha e acompanhamos a entrega.</p></div>
+<div class="card"><div class="icon">◈</div><h3>Gestão de creators</h3><p>Suporte comercial e estratégico para criadores transformarem conteúdo em oportunidades.</p></div>
+<div class="card"><div class="icon">▣</div><h3>Relatórios</h3><p>Acompanhamento das entregas e indicadores para entender o desempenho da ação.</p></div>
+</div>
+</div>
+</section>
+
+<div class="container dual">
+<div class="panel" id="criadores"><span class="tag">Para criadores</span><h3>Transforme sua influência em negócio.</h3><div class="list"><div><i>✓</i> Oportunidades com marcas</div><div><i>✓</i> Apoio comercial</div><div><i>✓</i> Organização de campanhas</div><div><i>✓</i> Posicionamento profissional</div><div><i>✓</i> Crescimento sustentável</div></div></div>
+</div>
+</section>
+
+<section id="campanhas">
+<div class="container">
+</div>
+</section>
+
+<section class="cta" id="contato">
+<div class="container"><div class="ctabox">
+<span class="tag">Vamos conversar?</span>
+<h2>Quero fechar uma publicidade!</h2>
+<p>Conte para nossa agencia o que você está buscando. A gente transforma a ideia em uma oportunidade.</p>
+<!-- TROQUE PELO SEU WHATSAPP -->
+<a class="btn primary" href="https://wa.me/5519990002859?text=Olá!%20Quero%20falar%20com%20os%20Gerentes!%20" target="_blank">Entrar em contato</a>
+</div></div>
+</section>
+</main>
+
+<footer><div class="container foot"><span>© <span id="year"></span> Network.agency</span><a class="social" href="https://www.instagram.com/network.agencyy?stkn=MzFpZDNybzV4NGln" target="_blank">@network.agencyy</a></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
